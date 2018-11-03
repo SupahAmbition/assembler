@@ -7,12 +7,15 @@ PKGS = -package getopt
 
 all : assembler 
 
-assembler : assembler.cmo
-	$(OCC) $(LIBS) -o assembler -linkpkg $(PKGS) assembler.cmo
+assembler : assembler.cmo util.cmo
+	$(OCC) $(LIBS) -o assembler -linkpkg $(PKGS) util.cmo assembler.cmo 
 
 
-assembler.cmo : assembler.ml
+assembler.cmo : assembler.ml 
 	$(OCC) -c $(PKGS) assembler.ml
+
+util.cmo: util.ml 
+	$(OCC) -c $(PKGS) util.ml
 
 
 clean : 

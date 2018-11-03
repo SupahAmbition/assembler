@@ -7,10 +7,8 @@
  *)
 
 
-let instruction_parser line = 
-    let strlist =
-        Str.split (Str.regexp "[ \n\r\t]+");
-    in strlist 
+let instrucParser line = 
+    Str.split_delim (Str.regexp "[ \n\r\t]+") line;
 ;;
 
 
@@ -33,4 +31,8 @@ let _ =
    Getopt.parse_cmdline specs print_endline; 
    Printf.printf "input = %s\n" !input;
    Printf.printf "output = %s\n" !output;
-
+   
+   let inputList = Util.strlist_from_file !input in 
+   let splitLine  = instrucParser (List.hd inputList) in 
+   List.iter (fun x -> Printf.printf "%s\n" x) splitLine;
+;;
