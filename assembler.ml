@@ -22,8 +22,8 @@ let output = ref "";;
  * In this case input and output can only have one argument *)
 let specs  = 
 [
-    ('i', "input",  None,  (Getopt.atmost_once input  (invalid_arg "Only one input allowed")  ) );
-    ('o', "output", None,  (Getopt.atmost_once output (invalid_arg "Only one output allowed") ) ) ;
+    ('i', "input",  None,  (Getopt.atmost_once input  (Getopt.Error "Only one input allowed")  ));
+    ('o', "output", None,  (Getopt.atmost_once output (Getopt.Error "Only one output allowed") )) ;
 ]
 
 

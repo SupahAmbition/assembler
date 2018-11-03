@@ -111,7 +111,7 @@ type(
   (char * string * 'a option * (string -> unit) option) list
 )
 ident(
-  def specs "assembler.ml" 32 847 847 "assembler.ml" 1 0 -1
+  def specs "assembler.ml" 32 849 849 "assembler.ml" 1 0 -1
 )
 "assembler.ml" 25 625 630 "assembler.ml" 25 625 633
 type(
@@ -121,221 +121,201 @@ type(
 type(
   string
 )
-"assembler.ml" 25 625 644 "assembler.ml" 25 625 648
+"assembler.ml" 25 625 645 "assembler.ml" 25 625 649
 type(
   'a option
 )
-"assembler.ml" 25 625 652 "assembler.ml" 25 625 670
+"assembler.ml" 25 625 653 "assembler.ml" 25 625 671
 type(
   string ref -> exn -> (string -> unit) option
 )
 ident(
   ext_ref Getopt.atmost_once
 )
-"assembler.ml" 25 625 671 "assembler.ml" 25 625 676
+"assembler.ml" 25 625 672 "assembler.ml" 25 625 677
 type(
   string ref
 )
 ident(
   int_ref input "assembler.ml" 17 430 434 "assembler.ml" 17 430 439
 )
-"assembler.ml" 25 625 679 "assembler.ml" 25 625 690
-type(
-  string -> exn
-)
-ident(
-  ext_ref Pervasives.invalid_arg
-)
-"assembler.ml" 25 625 691 "assembler.ml" 25 625 715
+"assembler.ml" 25 625 693 "assembler.ml" 25 625 717
 type(
   string
 )
-"assembler.ml" 25 625 678 "assembler.ml" 25 625 716
-call(
-  stack
-)
+"assembler.ml" 25 625 679 "assembler.ml" 25 625 718
 type(
   exn
 )
-"assembler.ml" 25 625 651 "assembler.ml" 25 625 719
+"assembler.ml" 25 625 652 "assembler.ml" 25 625 721
 call(
   stack
 )
 type(
   (string -> unit) option
 )
-"assembler.ml" 25 625 629 "assembler.ml" 25 625 721
+"assembler.ml" 25 625 629 "assembler.ml" 25 625 722
 type(
   char * string * 'a option * (string -> unit) option
 )
-"assembler.ml" 26 723 728 "assembler.ml" 26 723 731
+"assembler.ml" 26 724 729 "assembler.ml" 26 724 732
 type(
   char
 )
-"assembler.ml" 26 723 733 "assembler.ml" 26 723 741
+"assembler.ml" 26 724 734 "assembler.ml" 26 724 742
 type(
   string
 )
-"assembler.ml" 26 723 743 "assembler.ml" 26 723 747
+"assembler.ml" 26 724 744 "assembler.ml" 26 724 748
 type(
   'a option
 )
-"assembler.ml" 26 723 750 "assembler.ml" 26 723 768
+"assembler.ml" 26 724 752 "assembler.ml" 26 724 770
 type(
   string ref -> exn -> (string -> unit) option
 )
 ident(
   ext_ref Getopt.atmost_once
 )
-"assembler.ml" 26 723 769 "assembler.ml" 26 723 775
+"assembler.ml" 26 724 771 "assembler.ml" 26 724 777
 type(
   string ref
 )
 ident(
   int_ref output "assembler.ml" 18 452 456 "assembler.ml" 18 452 462
 )
-"assembler.ml" 26 723 777 "assembler.ml" 26 723 788
-type(
-  string -> exn
-)
-ident(
-  ext_ref Pervasives.invalid_arg
-)
-"assembler.ml" 26 723 789 "assembler.ml" 26 723 814
+"assembler.ml" 26 724 792 "assembler.ml" 26 724 817
 type(
   string
 )
-"assembler.ml" 26 723 776 "assembler.ml" 26 723 815
-call(
-  stack
-)
+"assembler.ml" 26 724 778 "assembler.ml" 26 724 818
 type(
   exn
 )
-"assembler.ml" 26 723 749 "assembler.ml" 26 723 817
+"assembler.ml" 26 724 751 "assembler.ml" 26 724 820
 call(
   stack
 )
 type(
   (string -> unit) option
 )
-"assembler.ml" 26 723 727 "assembler.ml" 26 723 819
+"assembler.ml" 26 724 728 "assembler.ml" 26 724 821
 type(
   char * string * 'a option * (string -> unit) option
 )
-"assembler.ml" 24 623 623 "assembler.ml" 27 822 823
+"assembler.ml" 24 623 623 "assembler.ml" 27 824 825
 type(
   (char * string * 'a option * (string -> unit) option) list
 )
-"assembler.ml" 32 847 851 "assembler.ml" 32 847 852
+"assembler.ml" 32 849 853 "assembler.ml" 32 849 854
 type(
   unit
 )
-"assembler.ml" 33 856 859 "assembler.ml" 33 856 879
+"assembler.ml" 33 858 861 "assembler.ml" 33 858 881
 type(
   Getopt.opt list -> (string -> unit) -> unit
 )
 ident(
   ext_ref Getopt.parse_cmdline
 )
-"assembler.ml" 33 856 880 "assembler.ml" 33 856 885
+"assembler.ml" 33 858 882 "assembler.ml" 33 858 887
 type(
   Getopt.opt list
 )
 ident(
   int_ref specs "assembler.ml" 23 609 613 "assembler.ml" 23 609 618
 )
-"assembler.ml" 33 856 886 "assembler.ml" 33 856 899
+"assembler.ml" 33 858 888 "assembler.ml" 33 858 901
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_endline
 )
-"assembler.ml" 33 856 859 "assembler.ml" 33 856 899
+"assembler.ml" 33 858 861 "assembler.ml" 33 858 901
 call(
   stack
 )
 type(
   unit
 )
-"assembler.ml" 34 902 905 "assembler.ml" 34 902 918
+"assembler.ml" 34 904 907 "assembler.ml" 34 904 920
 type(
   (string -> unit, out_channel, unit) format -> string -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"assembler.ml" 34 902 919 "assembler.ml" 34 902 933
+"assembler.ml" 34 904 921 "assembler.ml" 34 904 935
 type(
   (string -> unit, out_channel, unit) format
 )
-"assembler.ml" 34 902 934 "assembler.ml" 34 902 935
+"assembler.ml" 34 904 936 "assembler.ml" 34 904 937
 type(
   string ref -> string
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"assembler.ml" 34 902 935 "assembler.ml" 34 902 940
+"assembler.ml" 34 904 937 "assembler.ml" 34 904 942
 type(
   string ref
 )
 ident(
   int_ref input "assembler.ml" 17 430 434 "assembler.ml" 17 430 439
 )
-"assembler.ml" 34 902 934 "assembler.ml" 34 902 940
+"assembler.ml" 34 904 936 "assembler.ml" 34 904 942
 type(
   string
 )
-"assembler.ml" 34 902 905 "assembler.ml" 34 902 940
+"assembler.ml" 34 904 907 "assembler.ml" 34 904 942
 call(
   stack
 )
 type(
   unit
 )
-"assembler.ml" 35 942 945 "assembler.ml" 35 942 958
+"assembler.ml" 35 944 947 "assembler.ml" 35 944 960
 type(
   (string -> unit, out_channel, unit) format -> string -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"assembler.ml" 35 942 959 "assembler.ml" 35 942 974
+"assembler.ml" 35 944 961 "assembler.ml" 35 944 976
 type(
   (string -> unit, out_channel, unit) format
 )
-"assembler.ml" 35 942 975 "assembler.ml" 35 942 976
+"assembler.ml" 35 944 977 "assembler.ml" 35 944 978
 type(
   string ref -> string
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"assembler.ml" 35 942 976 "assembler.ml" 35 942 982
+"assembler.ml" 35 944 978 "assembler.ml" 35 944 984
 type(
   string ref
 )
 ident(
   int_ref output "assembler.ml" 18 452 456 "assembler.ml" 18 452 462
 )
-"assembler.ml" 35 942 975 "assembler.ml" 35 942 982
+"assembler.ml" 35 944 977 "assembler.ml" 35 944 984
 type(
   string
 )
-"assembler.ml" 35 942 945 "assembler.ml" 35 942 983
+"assembler.ml" 35 944 947 "assembler.ml" 35 944 985
 call(
   stack
 )
 type(
   unit
 )
-"assembler.ml" 34 902 905 "assembler.ml" 35 942 983
+"assembler.ml" 34 904 907 "assembler.ml" 35 944 985
 type(
   unit
 )
-"assembler.ml" 33 856 859 "assembler.ml" 35 942 983
+"assembler.ml" 33 858 861 "assembler.ml" 35 944 985
 type(
   unit
 )
