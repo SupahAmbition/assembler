@@ -72,8 +72,10 @@ let toInt instruction =
 ;;
 
 
+(*
+
 let packRtype instruct = 
-    let oppcode = Option.get (List.nth  instruct 1) in
+    let oppcode = List.nth  instruct 1 in
     let destR   = List.nth  instruct 2 in 
     let reg1    = List.nth  instruct 3 in 
     let reg2    = List.nth  instruct 4 in 
@@ -85,33 +87,7 @@ let packRtype instruct =
     lor (reg2) 
     in result; 
 ;;
-
-let packItype instruct = 
-    let oppcode = List.nth instruct 1 in 
-    let destR   = List.nth instruct 2 in 
-    let reg1    = List.nth instruct 3 in 
-    let immed   = List.nth instruct 4 in 
-   
-    0x0 lor (oppcode lsl 22) 
-    lor (destR lsl 19) 
-    lor (reg1 lsl 16) 
-    lor (immed) 
-;;
-
-let packJtype instruct = 
-    let oppcode = List.nth instruct 1 in 
-    let reg1    = List.nth instruct 2 in 
-    let reg2    = List.nth instruct 3 in 
-
-    0x0 lor (oppcode lsl 22)
-    lor (reg1 lsl 19)
-    lor (reg2 lsl 16)
-;;
-
-let packOtype instruct = 
-    let oppcode = List.nth instruct 1 in  
-    0x0 lor ( oppcode lsl 22)
-;; 
+*)
 
 
 (* tag oppcode destR reg1 reg2 comments *)
@@ -121,31 +97,24 @@ let packOtype instruct =
  * this function takes in a list a of instruct elements 
  * and will returned the correctly packed int. *)
 let packInt instruct =
-  
-    let oppcode_opt  = List.nth instruct 1 in  
-    let oppcode = 
-        match oppcode_opt with 
-        | Some x -> x
-        | None -> -1
-    in 
-    
-    (* match on the oppcode *) 
-    match oppcode with 
-    | 0 
-    | 1  -> packRtype instruct
-    | 2 
-    | 3 
-    | 4  -> packItype instruct
-    | 5  -> packJtype instruct 
-    | 6 
-    | 7  -> packOtype instruct
-    | 8  -> 0x0 lor ( oppcode lsl 22)
-    | _ -> failwith "Unrecognized oppcode\n" 
 
+    let instructIntOpts = List.filter (fun x -> x != None) instruct in 
+    let instructInts = List.map (fun x -> 
+        match x with 
+        | None -> failwith "there should be no none value in the list" 
+        | Some y -> y ) instructIntOpts 
+    in 
+    let result = ref 0 in  
+    let helper elemNum elem  = 
+        match elemNum with 
+        | 0 -> result := !result lor ( elem lsl 22) 
+        | 1 -> result := !result lor ( elem lsl 19) 
+        | 2 -> result := !result lor ( elem lsl 16)
+        | 3 -> result := !result lor elem 
+        | _ -> () 
+    in List.iteri helper instructInts;
+    !result;
 ;;
-(* note... lots of manual work here. 
- * Maybe revist this later to devise
- * a more elegant solution *)
 
 
 
@@ -191,9 +160,8 @@ let _ =
    List.iter( fun x -> 
        let str =  printIntElements  x in 
        Printf.printf "%s\n" str ) instruct_ints;
-       
+   
    List.iter (fun x ->
        let packed = packInt x in 
        Printf.printf "%d\n" packed ) instruct_ints; 
-
 ;;
