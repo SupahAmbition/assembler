@@ -56,6 +56,24 @@ let instructParser instructs =
 ;;
 
 
+(* tag parser 
+ * string list -> (string * int ) list 
+ *
+ * This function takes in a list of assembly instructions
+ * and extracts the the tags from each instruction
+ * returns an association list of which contains the string 
+ * and it's associated line number (address). *)
+let tagParser instructs = 
+
+    let helper lineNumber line = 
+        (* grab the first 6 characters*)
+        let str = List.hd (Str.split_delim (Str.regexp "[ \n\r\x0c\t]+") line)
+        in (str,  lineNumber)
+    
+    in 
+    List.mapi helper instructs 
+
+
 (* to Int 
  * string list -> int option list
  *
@@ -152,11 +170,14 @@ let _ =
    let instruct_elements = instructParser inputList in 
    List.iter( fun x -> Printf.printf "%s \n" x ) inputList;
 
+   let tagList = tagParser inputList in 
+   List.iter (fun (str, lineNum) -> Printf.printf "Address is: %d, Tag is %s\n" lineNum str ) tagList; 
+
    let instruct_ints = List.mapi (fun x -> toInt x) instruct_elements in 
    List.iter( fun x -> 
        let str =  printIntElements  x in 
        Printf.printf "%s\n" str ) instruct_ints;
-  
+
    List.iter (fun x ->
        let packed = packInt x in 
        Printf.printf "%d\n" packed ) instruct_ints; 
