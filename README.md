@@ -7,7 +7,7 @@ proramming experiance would be compared to implemening something like
 in a c style imperative language. 
 
 
-##Makfile
+## Makfile
 all: -> complies the assembler program with the correct 
 		modules and libraries to produce an bytecode executable. 
 
@@ -26,24 +26,23 @@ The two options are:
 				   If you don't specify a file to write to, 
 				   the program will just print to stdout. 
 
-	###Example 
+	### Example 
 	./assembler -i testcases/test1.asm 
 	./assembler -i testcases/test2.asm -o testcases/test2.mc
 
 
-##assembler.ml 
+## assembler.ml 
 The ocaml source code file. 
 Works pretty well, but there are always improvements to be made. 
 
-	todo: 
-	0. Implement tags / tag replacement. 
-	1. Implement error checking, 
-			throw execptions on bad input. 
-	2. Implement multithreading. 
+todo: 
+0. Implement tags / tag replacement. 
+1. Implement error checking, throw execptions on bad input. 
+2. Implement multithreading. 
 
 
 ## testcases
-test1 -> basic single line tests for each oppcode
-test2 -> test relative addressing 
-test3 -> testing tag implementation 
-test4 -> testing tag relative addressing  
+test1 -> basic single line tests for each oppcode.  
+test2 -> test relative addressing.  
+test3 -> testing tag implementation.   
+test4 -> testing tag relative addressing.   
