@@ -20,9 +20,9 @@ let determineOppcode str =
     | "sw"   -> 3
     | "beq"  -> 4
     | "jalr" -> 5
-    | "noop" -> 7
-    | "halt" -> 8
-    | ".fill"-> 9
+    | "noop" -> 6
+    | "halt" -> 7
+    | ".fill"-> 8
     | _      -> -1
 ;;
 
@@ -36,10 +36,9 @@ let determineOppcode str =
  * Will only split into a max of 6 elements,
  * [ tag; oppcode; field1; field2; field3; comments] *)
 let instructParser instructs = 
-
+    
     let helper line = 
         Str.bounded_split_delim (Str.regexp "[ \n\r\t]+") line 6;
-    
     in 
     List.map helper instructs;  
 ;;
@@ -69,8 +68,87 @@ let toInt instruction =
     in 
     List.rev (List.mapi helper instruction) 
     (* note.. maybe I can find a way so 
-     * I dont need to reverse list *)
+     * I dont need to reverse the list *)
 ;;
+
+
+let packRtype instruct = 
+    let oppcode = Option.get (List.nth  instruct 1) in
+    let destR   = List.nth  instruct 2 in 
+    let reg1    = List.nth  instruct 3 in 
+    let reg2    = List.nth  instruct 4 in 
+   
+    let result = 0x0 
+    lor (oppcode lsl 22) 
+    lor (destR lsl 19) 
+    lor (reg1 lsl 16) 
+    lor (reg2) 
+    in result; 
+;;
+
+let packItype instruct = 
+    let oppcode = List.nth instruct 1 in 
+    let destR   = List.nth instruct 2 in 
+    let reg1    = List.nth instruct 3 in 
+    let immed   = List.nth instruct 4 in 
+   
+    0x0 lor (oppcode lsl 22) 
+    lor (destR lsl 19) 
+    lor (reg1 lsl 16) 
+    lor (immed) 
+;;
+
+let packJtype instruct = 
+    let oppcode = List.nth instruct 1 in 
+    let reg1    = List.nth instruct 2 in 
+    let reg2    = List.nth instruct 3 in 
+
+    0x0 lor (oppcode lsl 22)
+    lor (reg1 lsl 19)
+    lor (reg2 lsl 16)
+;;
+
+let packOtype instruct = 
+    let oppcode = List.nth instruct 1 in  
+    0x0 lor ( oppcode lsl 22)
+;; 
+
+
+(* tag oppcode destR reg1 reg2 comments *)
+(* packInt 
+ * int option list -> int 
+ *
+ * this function takes in a list a of instruct elements 
+ * and will returned the correctly packed int. *)
+let packInt instruct =
+  
+    let oppcode_opt  = List.nth instruct 1 in  
+    let oppcode = 
+        match oppcode_opt with 
+        | Some x -> x
+        | None -> -1
+    in 
+    
+    (* match on the oppcode *) 
+    match oppcode with 
+    | 0 
+    | 1  -> packRtype instruct
+    | 2 
+    | 3 
+    | 4  -> packItype instruct
+    | 5  -> packJtype instruct 
+    | 6 
+    | 7  -> packOtype instruct
+    | 8  -> 0x0 lor ( oppcode lsl 22)
+    | _ -> failwith "Unrecognized oppcode\n" 
+
+;;
+(* note... lots of manual work here. 
+ * Maybe revist this later to devise
+ * a more elegant solution *)
+
+
+
 
 (* just for debugging *)
 let printIntElements lst = 
@@ -82,7 +160,6 @@ let printIntElements lst =
     
     in List.fold_left helper "" lst
 ;;
-
 
 
 let input  = ref "";;
@@ -113,7 +190,10 @@ let _ =
    let instruct_ints = List.map (fun x -> toInt x) instruct_elements in 
    List.iter( fun x -> 
        let str =  printIntElements  x in 
-       Printf.printf "%s\n" str ) instruct_ints  
-
+       Printf.printf "%s\n" str ) instruct_ints;
+       
+   List.iter (fun x ->
+       let packed = packInt x in 
+       Printf.printf "%d\n" packed ) instruct_ints; 
 
 ;;

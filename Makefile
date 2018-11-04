@@ -12,7 +12,7 @@ assembler : assembler.cmo util.cmo
 
 
 assembler.cmo : assembler.ml 
-	$(OCC) -c $(PKGS) assembler.ml
+	$(OCC) -c $(PKGS) util.ml assembler.ml
 
 util.cmo: util.ml 
 	$(OCC) -c $(PKGS) util.ml

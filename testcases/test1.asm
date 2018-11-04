@@ -6,3 +6,4 @@ branch 	beq		0		0		100
 hello 	jalr	1		1
 		noop
 		halt
+		.fill 	3
