@@ -131,11 +131,10 @@ let packInt instruct =
         | 3 -> result := !result lor ( elem land 0x0000ffff) 
         | _ -> () 
     in List.iteri helper instructInts;
-    
+   
+    (* just return the second element for .fill*)
     if List.hd instructInts = 8
-        (* if the oppcode is fill then 
-            * just return the second element*)
-        then List.hd (List.tl instructInts) 
+        then List.nth instructInts 1
     else 
         !result;
 ;;
@@ -156,6 +155,7 @@ let specs  =
     ('i', "input",  None,  (Getopt.atmost_once input  (Getopt.Error "Only one input allowed")  ));
     ('o', "output", None,  (Getopt.atmost_once output (Getopt.Error "Only one output allowed") )) ;
 ]
+
 
 
 

@@ -14,7 +14,7 @@ test: -> compiles the assembler program and runs each test file on it.
 		 Does not check that the test programs are giving correct output.  
 clean -> clean the directory of all complied files and whatnot.   
 
-##assembler
+## assembler
 The compiled program that runs the assembler. 
 I used an ocmal version of get opt to parse command line arguments. 
 
@@ -34,9 +34,9 @@ The ocaml source code file.
 Works pretty well, but there are always improvements to be made. 
 
 todo:  
-0. Implement tags / tag replacement. 
-1. Implement error checking, throw execptions on bad input. 
-2. Implement multithreading. 
+1. Implement tags / tag replacement. 
+2. Implement error checking, throw execptions on bad input. 
+3. Implement multithreading. 
 
 
 ## testcases
