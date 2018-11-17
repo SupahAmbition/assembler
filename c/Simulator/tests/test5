@@ -1,0 +1,7 @@
+	noop 
+	beq		0	0	1		If r0 and r0 are equal then jump to address 3 
+	lw		2 	0 	six	
+	lw		1 	0 	five 		if we see register 2 = 6 then beq did not work 
+	halt
+five .fill	5
+six	 .fill 	6	

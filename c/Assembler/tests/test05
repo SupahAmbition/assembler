@@ -1,0 +1,10 @@
+		wl 		1	11	five	load reg1 with 5 (symbolic address)
+		lw		7	1	0		load2 with -1 (numeric address)
+start	dda 	1	2	1		decremenet reg1
+		bqe 	a	11	2		goto end of program where reg1 == 0
+		beq		0	0	sta  	go back to the beginning of the loop 
+		not	
+done	jkfdsl 					end of program
+five 	fill 	5
+neg1	.fil	-1
+stAdd	.fill	sart					will contain the address of start(2)

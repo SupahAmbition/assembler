@@ -1,0 +1,39 @@
+README
+PROJECT BY: Tyler Beverley And Mike Hawkins
+
+Makefile 
+Pretty basic make file. Two rules. A clean rule and an all rule.  
+All rule: Compiles the simulator.c file into a executable program. 
+
+
+simulator.c 
+this file contains all the multicycle simulator code for the multicycle simulator part of the project. 
+to see a more detailed explanation see the multi_simulator_explaination.pdf
+
+BENCHMARKS:
+addNandTest -> Assembly code for the program that is heavy on Add and Nand instructions
+addNandMC	-> Machine code the program add/nand program. 
+beqTest 	-> Assembly code for the program that is heavy on beq instructions. 
+beqMC 		-> Machine code for the beq program. 
+jalrTest 	-> Assembly code for the program that is heavy on jalr instructions. 
+				NOTE: Because of the way we wrote our jalr to run, this program takes 
+					a bit longer to run than the others... 
+jalrMC 		-> machine code for the jalr program. 
+
+
+
+TESTCASES:
+each test case here is labeled. for each test case there is an associated testmc file
+that stores the machine code for that file. e.g. test1's machince code file will be test1mc
+
+test1 -> 	checks to make sure lw and add are functioning properly.
+test2 -> 	The machine code from the example in the pdf. No associated assembly file, only the machine code . 
+test3 -> 	test nand
+test4 -> 	test lw/sw
+test5 -> 	test beq	
+test6 -> 	test jalr	
+test7 ->  	test add
+test8 -> 	test negative offset beq (infinite loop when works)
+
+
+

@@ -1,0 +1,5 @@
+		lw 		1		0		one
+top		nand	2		1		1			
+		beq		0		0		top		will be an infite loop if it works. 	
+		halt
+one		.fill	1	

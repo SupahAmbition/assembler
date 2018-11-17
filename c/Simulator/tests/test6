@@ -1,0 +1,9 @@
+		noop  
+		lw		1	0	six		store the lw address 		
+		jalr 	1	1			jump to the load word 	
+		noop  
+		noop
+		noop
+		lw		1	0  six		if 6 is in r1 and we skiped the noops then jalr worked. 
+		halt
+six	 	.fill	6
