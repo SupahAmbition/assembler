@@ -1,0 +1,456 @@
+"util.ml" 6 244 248 "util.ml" 6 244 265
+type(
+  string -> string list
+)
+ident(
+  def strlist_from_file "util.ml" 22 594 594 "util.ml" 1 0 -1
+)
+"util.ml" 6 244 266 "util.ml" 6 244 274
+type(
+  string
+)
+ident(
+  def filename "util.ml" 7 277 279 "util.ml" 17 483 498
+)
+"util.ml" 7 277 287 "util.ml" 7 277 293
+type(
+  in_channel -> string list
+)
+ident(
+  def helper "util.ml" 7 277 279 "util.ml" 17 483 498
+)
+"util.ml" 7 277 294 "util.ml" 7 277 300
+type(
+  in_channel
+)
+ident(
+  def inchan "util.ml" 8 303 307 "util.ml" 14 433 442
+)
+"util.ml" 9 311 321 "util.ml" 9 311 325
+type(
+  string
+)
+ident(
+  def line "util.ml" 10 349 355 "util.ml" 10 349 378
+)
+"util.ml" 9 311 328 "util.ml" 9 311 338
+type(
+  in_channel -> string
+)
+ident(
+  ext_ref Pervasives.input_line
+)
+"util.ml" 9 311 339 "util.ml" 9 311 345
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "util.ml" 7 277 294 "util.ml" 7 277 300
+)
+"util.ml" 9 311 328 "util.ml" 9 311 345
+call(
+  stack
+)
+type(
+  string
+)
+"util.ml" 10 349 355 "util.ml" 10 349 359
+type(
+  string
+)
+ident(
+  int_ref line "util.ml" 9 311 321 "util.ml" 9 311 325
+)
+"util.ml" 10 349 364 "util.ml" 10 349 370
+type(
+  in_channel -> string list
+)
+ident(
+  int_ref helper "util.ml" 7 277 287 "util.ml" 7 277 293
+)
+"util.ml" 10 349 371 "util.ml" 10 349 377
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "util.ml" 7 277 294 "util.ml" 7 277 300
+)
+"util.ml" 10 349 363 "util.ml" 10 349 378
+call(
+  stack
+)
+type(
+  string list
+)
+"util.ml" 10 349 355 "util.ml" 10 349 378
+type(
+  string list
+)
+"util.ml" 9 311 317 "util.ml" 10 349 378
+type(
+  string list
+)
+"util.ml" 12 388 394 "util.ml" 12 388 405
+type(
+  exn
+)
+"util.ml" 13 409 416 "util.ml" 13 409 424
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"util.ml" 13 409 425 "util.ml" 13 409 431
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "util.ml" 7 277 294 "util.ml" 7 277 300
+)
+"util.ml" 13 409 416 "util.ml" 13 409 431
+call(
+  stack
+)
+type(
+  unit
+)
+"util.ml" 14 433 440 "util.ml" 14 433 442
+type(
+  string list
+)
+"util.ml" 13 409 416 "util.ml" 14 433 442
+type(
+  string list
+)
+"util.ml" 8 303 307 "util.ml" 14 433 442
+type(
+  string list
+)
+"util.ml" 16 448 454 "util.ml" 16 448 460
+type(
+  in_channel
+)
+ident(
+  def inchan "util.ml" 17 483 485 "util.ml" 17 483 498
+)
+"util.ml" 16 448 463 "util.ml" 16 448 470
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in
+)
+"util.ml" 16 448 471 "util.ml" 16 448 479
+type(
+  string
+)
+ident(
+  int_ref filename "util.ml" 6 244 266 "util.ml" 6 244 274
+)
+"util.ml" 16 448 463 "util.ml" 16 448 479
+call(
+  stack
+)
+type(
+  in_channel
+)
+"util.ml" 17 483 485 "util.ml" 17 483 491
+type(
+  in_channel -> string list
+)
+ident(
+  int_ref helper "util.ml" 7 277 287 "util.ml" 7 277 293
+)
+"util.ml" 17 483 492 "util.ml" 17 483 498
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "util.ml" 16 448 454 "util.ml" 16 448 460
+)
+"util.ml" 17 483 485 "util.ml" 17 483 498
+call(
+  tail
+)
+type(
+  string list
+)
+"util.ml" 16 448 450 "util.ml" 17 483 498
+type(
+  string list
+)
+"util.ml" 7 277 279 "util.ml" 17 483 498
+type(
+  string list
+)
+"util.ml" 22 594 598 "util.ml" 22 594 613
+type(
+  string list -> string -> unit
+)
+ident(
+  def strlist_to_file "util.ml" 34 906 930 "util.ml" 1 0 -1
+)
+"util.ml" 22 594 614 "util.ml" 22 594 621
+type(
+  string list
+)
+ident(
+  def strlist "util.ml" 22 594 622 "util.ml" 34 906 930
+)
+"util.ml" 22 594 622 "util.ml" 22 594 630
+type(
+  string
+)
+ident(
+  def filename "util.ml" 23 634 636 "util.ml" 34 906 930
+)
+"util.ml" 23 634 644 "util.ml" 23 634 650
+type(
+  out_channel -> string list -> unit
+)
+ident(
+  def helper "util.ml" 23 634 636 "util.ml" 34 906 930
+)
+"util.ml" 23 634 651 "util.ml" 23 634 658
+type(
+  out_channel
+)
+ident(
+  def outchan "util.ml" 23 634 659 "util.ml" 31 854 863
+)
+"util.ml" 23 634 659 "util.ml" 23 634 663
+type(
+  string list
+)
+ident(
+  def list "util.ml" 24 666 670 "util.ml" 31 854 863
+)
+"util.ml" 24 666 673 "util.ml" 24 666 677
+type(
+  string list
+)
+ident(
+  int_ref list "util.ml" 23 634 659 "util.ml" 23 634 663
+)
+"util.ml" 24 666 678 "util.ml" 24 666 679
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"util.ml" 24 666 680 "util.ml" 24 666 682
+type(
+  string list
+)
+"util.ml" 24 666 673 "util.ml" 24 666 682
+type(
+  bool
+)
+"util.ml" 25 688 694 "util.ml" 25 688 703
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"util.ml" 25 688 704 "util.ml" 25 688 711
+type(
+  out_channel
+)
+ident(
+  int_ref outchan "util.ml" 23 634 651 "util.ml" 23 634 658
+)
+"util.ml" 25 688 694 "util.ml" 25 688 711
+call(
+  tail
+)
+type(
+  unit
+)
+"util.ml" 28 733 741 "util.ml" 28 733 754
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"util.ml" 28 733 755 "util.ml" 28 733 762
+type(
+  out_channel
+)
+ident(
+  int_ref outchan "util.ml" 23 634 651 "util.ml" 23 634 658
+)
+"util.ml" 28 733 764 "util.ml" 28 733 771
+type(
+  string list -> string
+)
+ident(
+  ext_ref List.hd
+)
+"util.ml" 28 733 772 "util.ml" 28 733 776
+type(
+  string list
+)
+ident(
+  int_ref list "util.ml" 23 634 659 "util.ml" 23 634 663
+)
+"util.ml" 28 733 763 "util.ml" 28 733 777
+call(
+  stack
+)
+type(
+  string
+)
+"util.ml" 28 733 741 "util.ml" 28 733 777
+call(
+  stack
+)
+type(
+  unit
+)
+"util.ml" 29 779 787 "util.ml" 29 779 800
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"util.ml" 29 779 801 "util.ml" 29 779 808
+type(
+  out_channel
+)
+ident(
+  int_ref outchan "util.ml" 23 634 651 "util.ml" 23 634 658
+)
+"util.ml" 29 779 809 "util.ml" 29 779 813
+type(
+  string
+)
+"util.ml" 29 779 787 "util.ml" 29 779 813
+call(
+  stack
+)
+type(
+  unit
+)
+"util.ml" 30 815 823 "util.ml" 30 815 829
+type(
+  out_channel -> string list -> unit
+)
+ident(
+  int_ref helper "util.ml" 23 634 644 "util.ml" 23 634 650
+)
+"util.ml" 30 815 830 "util.ml" 30 815 837
+type(
+  out_channel
+)
+ident(
+  int_ref outchan "util.ml" 23 634 651 "util.ml" 23 634 658
+)
+"util.ml" 30 815 839 "util.ml" 30 815 846
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.tl
+)
+"util.ml" 30 815 847 "util.ml" 30 815 851
+type(
+  string list
+)
+ident(
+  int_ref list "util.ml" 23 634 659 "util.ml" 23 634 663
+)
+"util.ml" 30 815 838 "util.ml" 30 815 852
+call(
+  stack
+)
+type(
+  string list
+)
+"util.ml" 30 815 823 "util.ml" 30 815 853
+call(
+  tail
+)
+type(
+  unit
+)
+"util.ml" 29 779 787 "util.ml" 30 815 853
+type(
+  unit
+)
+"util.ml" 27 721 727 "util.ml" 31 854 863
+type(
+  unit
+)
+"util.ml" 24 666 670 "util.ml" 31 854 863
+type(
+  unit
+)
+"util.ml" 33 869 875 "util.ml" 33 869 882
+type(
+  out_channel
+)
+ident(
+  def outchan "util.ml" 34 906 908 "util.ml" 34 906 930
+)
+"util.ml" 33 869 885 "util.ml" 33 869 893
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out
+)
+"util.ml" 33 869 894 "util.ml" 33 869 902
+type(
+  string
+)
+ident(
+  int_ref filename "util.ml" 22 594 622 "util.ml" 22 594 630
+)
+"util.ml" 33 869 885 "util.ml" 33 869 902
+call(
+  stack
+)
+type(
+  out_channel
+)
+"util.ml" 34 906 908 "util.ml" 34 906 914
+type(
+  out_channel -> string list -> unit
+)
+ident(
+  int_ref helper "util.ml" 23 634 644 "util.ml" 23 634 650
+)
+"util.ml" 34 906 915 "util.ml" 34 906 922
+type(
+  out_channel
+)
+ident(
+  int_ref outchan "util.ml" 33 869 875 "util.ml" 33 869 882
+)
+"util.ml" 34 906 923 "util.ml" 34 906 930
+type(
+  string list
+)
+ident(
+  int_ref strlist "util.ml" 22 594 614 "util.ml" 22 594 621
+)
+"util.ml" 34 906 908 "util.ml" 34 906 930
+call(
+  tail
+)
+type(
+  unit
+)
+"util.ml" 33 869 871 "util.ml" 34 906 930
+type(
+  unit
+)
+"util.ml" 23 634 636 "util.ml" 34 906 930
+type(
+  unit
+)

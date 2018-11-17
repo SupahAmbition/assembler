@@ -1,0 +1,2162 @@
+"assembler.ml" 11 340 344 "assembler.ml" 11 340 360
+type(
+  int option list -> string
+)
+ident(
+  def printIntElements "assembler.ml" 26 698 698 "assembler.ml" 1 0 -1
+)
+"assembler.ml" 11 340 361 "assembler.ml" 11 340 364
+type(
+  int option list
+)
+ident(
+  def lst "assembler.ml" 13 373 377 "assembler.ml" 18 528 563
+)
+"assembler.ml" 13 373 381 "assembler.ml" 13 373 387
+type(
+  string -> int option -> string
+)
+ident(
+  def helper "assembler.ml" 18 528 535 "assembler.ml" 18 528 563
+)
+"assembler.ml" 13 373 388 "assembler.ml" 13 373 391
+type(
+  string
+)
+ident(
+  def str "assembler.ml" 13 373 392 "assembler.ml" 16 461 521
+)
+"assembler.ml" 13 373 392 "assembler.ml" 13 373 398
+type(
+  int option
+)
+ident(
+  def intopt "assembler.ml" 14 402 410 "assembler.ml" 16 461 521
+)
+"assembler.ml" 14 402 416 "assembler.ml" 14 402 422
+type(
+  int option
+)
+ident(
+  int_ref intopt "assembler.ml" 13 373 392 "assembler.ml" 13 373 398
+)
+"assembler.ml" 15 429 439 "assembler.ml" 15 429 443
+type(
+  int option
+)
+"assembler.ml" 15 429 447 "assembler.ml" 15 429 454
+type(
+  string
+)
+"assembler.ml" 15 429 455 "assembler.ml" 15 429 456
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"assembler.ml" 15 429 457 "assembler.ml" 15 429 460
+type(
+  string
+)
+ident(
+  int_ref str "assembler.ml" 13 373 388 "assembler.ml" 13 373 391
+)
+"assembler.ml" 15 429 447 "assembler.ml" 15 429 460
+call(
+  tail
+)
+type(
+  string
+)
+"assembler.ml" 16 461 476 "assembler.ml" 16 461 477
+type(
+  int
+)
+ident(
+  def x "assembler.ml" 16 461 481 "assembler.ml" 16 461 521
+)
+"assembler.ml" 16 461 471 "assembler.ml" 16 461 477
+type(
+  int option
+)
+"assembler.ml" 16 461 482 "assembler.ml" 16 461 506
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"assembler.ml" 16 461 507 "assembler.ml" 16 461 508
+type(
+  int
+)
+ident(
+  int_ref x "assembler.ml" 16 461 476 "assembler.ml" 16 461 477
+)
+"assembler.ml" 16 461 481 "assembler.ml" 16 461 509
+call(
+  stack
+)
+type(
+  string
+)
+"assembler.ml" 16 461 510 "assembler.ml" 16 461 511
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"assembler.ml" 16 461 512 "assembler.ml" 16 461 515
+type(
+  string
+)
+"assembler.ml" 16 461 516 "assembler.ml" 16 461 517
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"assembler.ml" 16 461 518 "assembler.ml" 16 461 521
+type(
+  string
+)
+ident(
+  int_ref str "assembler.ml" 13 373 388 "assembler.ml" 13 373 391
+)
+"assembler.ml" 16 461 512 "assembler.ml" 16 461 521
+call(
+  stack
+)
+type(
+  string
+)
+"assembler.ml" 16 461 481 "assembler.ml" 16 461 521
+call(
+  tail
+)
+type(
+  string
+)
+"assembler.ml" 14 402 410 "assembler.ml" 16 461 521
+type(
+  string
+)
+"assembler.ml" 18 528 535 "assembler.ml" 18 528 549
+type(
+  (string -> int option -> string) -> string -> int option list -> string
+)
+ident(
+  ext_ref List.fold_left
+)
+"assembler.ml" 18 528 550 "assembler.ml" 18 528 556
+type(
+  string -> int option -> string
+)
+ident(
+  int_ref helper "assembler.ml" 13 373 381 "assembler.ml" 13 373 387
+)
+"assembler.ml" 18 528 557 "assembler.ml" 18 528 559
+type(
+  string
+)
+"assembler.ml" 18 528 560 "assembler.ml" 18 528 563
+type(
+  int option list
+)
+ident(
+  int_ref lst "assembler.ml" 11 340 361 "assembler.ml" 11 340 364
+)
+"assembler.ml" 18 528 535 "assembler.ml" 18 528 563
+call(
+  tail
+)
+type(
+  string
+)
+"assembler.ml" 13 373 377 "assembler.ml" 18 528 563
+type(
+  string
+)
+"assembler.ml" 26 698 702 "assembler.ml" 26 698 718
+type(
+  string -> int
+)
+ident(
+  def determineOppcode "assembler.ml" 50 1258 1258 "assembler.ml" 1 0 -1
+)
+"assembler.ml" 26 698 719 "assembler.ml" 26 698 722
+type(
+  string
+)
+ident(
+  def str "assembler.ml" 27 726 730 "assembler.ml" 38 954 972
+)
+"assembler.ml" 27 726 734 "assembler.ml" 27 726 737
+type(
+  string
+)
+ident(
+  def str "assembler.ml" 28 772 776 "assembler.ml" 38 954 972
+)
+"assembler.ml" 27 726 740 "assembler.ml" 27 726 762
+type(
+  string -> string
+)
+ident(
+  ext_ref String.lowercase_ascii
+)
+"assembler.ml" 27 726 763 "assembler.ml" 27 726 766
+type(
+  string
+)
+ident(
+  int_ref str "assembler.ml" 26 698 719 "assembler.ml" 26 698 722
+)
+"assembler.ml" 27 726 740 "assembler.ml" 27 726 766
+call(
+  stack
+)
+type(
+  string
+)
+"assembler.ml" 28 772 782 "assembler.ml" 28 772 785
+type(
+  string
+)
+ident(
+  int_ref str "assembler.ml" 27 726 734 "assembler.ml" 27 726 737
+)
+"assembler.ml" 29 792 798 "assembler.ml" 29 792 803
+type(
+  string
+)
+"assembler.ml" 29 792 808 "assembler.ml" 29 792 809
+type(
+  int
+)
+"assembler.ml" 30 810 816 "assembler.ml" 30 810 822
+type(
+  string
+)
+"assembler.ml" 30 810 826 "assembler.ml" 30 810 827
+type(
+  int
+)
+"assembler.ml" 31 828 834 "assembler.ml" 31 828 838
+type(
+  string
+)
+"assembler.ml" 31 828 844 "assembler.ml" 31 828 845
+type(
+  int
+)
+"assembler.ml" 32 846 852 "assembler.ml" 32 846 856
+type(
+  string
+)
+"assembler.ml" 32 846 862 "assembler.ml" 32 846 863
+type(
+  int
+)
+"assembler.ml" 33 864 870 "assembler.ml" 33 864 875
+type(
+  string
+)
+"assembler.ml" 33 864 880 "assembler.ml" 33 864 881
+type(
+  int
+)
+"assembler.ml" 34 882 888 "assembler.ml" 34 882 894
+type(
+  string
+)
+"assembler.ml" 34 882 898 "assembler.ml" 34 882 899
+type(
+  int
+)
+"assembler.ml" 35 900 906 "assembler.ml" 35 900 912
+type(
+  string
+)
+"assembler.ml" 35 900 916 "assembler.ml" 35 900 917
+type(
+  int
+)
+"assembler.ml" 36 918 924 "assembler.ml" 36 918 930
+type(
+  string
+)
+"assembler.ml" 36 918 934 "assembler.ml" 36 918 935
+type(
+  int
+)
+"assembler.ml" 37 936 942 "assembler.ml" 37 936 949
+type(
+  string
+)
+"assembler.ml" 37 936 952 "assembler.ml" 37 936 953
+type(
+  int
+)
+"assembler.ml" 38 954 960 "assembler.ml" 38 954 961
+type(
+  string
+)
+"assembler.ml" 38 954 970 "assembler.ml" 38 954 972
+type(
+  int
+)
+"assembler.ml" 28 772 776 "assembler.ml" 38 954 972
+type(
+  int
+)
+"assembler.ml" 27 726 730 "assembler.ml" 38 954 972
+type(
+  int
+)
+"assembler.ml" 50 1258 1262 "assembler.ml" 50 1258 1276
+type(
+  string list -> string list list
+)
+ident(
+  def instructParser "assembler.ml" 66 1711 1711 "assembler.ml" 1 0 -1
+)
+"assembler.ml" 50 1258 1277 "assembler.ml" 50 1258 1286
+type(
+  string list
+)
+ident(
+  def instructs "assembler.ml" 52 1295 1299 "assembler.ml" 55 1396 1426
+)
+"assembler.ml" 52 1295 1303 "assembler.ml" 52 1295 1309
+type(
+  string -> string list
+)
+ident(
+  def helper "assembler.ml" 55 1396 1400 "assembler.ml" 55 1396 1426
+)
+"assembler.ml" 52 1295 1310 "assembler.ml" 52 1295 1314
+type(
+  string
+)
+ident(
+  def line "assembler.ml" 53 1318 1326 "assembler.ml" 53 1318 1387
+)
+"assembler.ml" 53 1318 1326 "assembler.ml" 53 1318 1349
+type(
+  Str.regexp -> string -> int -> string list
+)
+ident(
+  ext_ref Str.bounded_split_delim
+)
+"assembler.ml" 53 1318 1351 "assembler.ml" 53 1318 1361
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"assembler.ml" 53 1318 1362 "assembler.ml" 53 1318 1378
+type(
+  string
+)
+"assembler.ml" 53 1318 1350 "assembler.ml" 53 1318 1379
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"assembler.ml" 53 1318 1380 "assembler.ml" 53 1318 1384
+type(
+  string
+)
+ident(
+  int_ref line "assembler.ml" 52 1295 1310 "assembler.ml" 52 1295 1314
+)
+"assembler.ml" 53 1318 1385 "assembler.ml" 53 1318 1386
+type(
+  int
+)
+"assembler.ml" 53 1318 1326 "assembler.ml" 53 1318 1387
+call(
+  tail
+)
+type(
+  string list
+)
+"assembler.ml" 55 1396 1400 "assembler.ml" 55 1396 1408
+type(
+  (string -> string list) -> string list -> string list list
+)
+ident(
+  ext_ref List.map
+)
+"assembler.ml" 55 1396 1409 "assembler.ml" 55 1396 1415
+type(
+  string -> string list
+)
+ident(
+  int_ref helper "assembler.ml" 52 1295 1303 "assembler.ml" 52 1295 1309
+)
+"assembler.ml" 55 1396 1416 "assembler.ml" 55 1396 1425
+type(
+  string list
+)
+ident(
+  int_ref instructs "assembler.ml" 50 1258 1277 "assembler.ml" 50 1258 1286
+)
+"assembler.ml" 55 1396 1400 "assembler.ml" 55 1396 1426
+call(
+  tail
+)
+type(
+  string list list
+)
+"assembler.ml" 52 1295 1299 "assembler.ml" 55 1396 1426
+type(
+  string list list
+)
+"assembler.ml" 66 1711 1715 "assembler.ml" 66 1711 1724
+type(
+  string list -> (string * int) list
+)
+ident(
+  def tagParser "assembler.ml" 82 2143 2143 "assembler.ml" 1 0 -1
+)
+"assembler.ml" 66 1711 1725 "assembler.ml" 66 1711 1734
+type(
+  string list
+)
+ident(
+  def instructs "assembler.ml" 68 1739 1743 "assembler.ml" 74 1936 1966
+)
+"assembler.ml" 68 1739 1747 "assembler.ml" 68 1739 1753
+type(
+  'a -> string -> string * 'a
+)
+ident(
+  def helper "assembler.ml" 74 1936 1940 "assembler.ml" 74 1936 1966
+)
+"assembler.ml" 68 1739 1754 "assembler.ml" 68 1739 1764
+type(
+  'a
+)
+ident(
+  def lineNumber "assembler.ml" 68 1739 1765 "assembler.ml" 71 1893 1922
+)
+"assembler.ml" 68 1739 1765 "assembler.ml" 68 1739 1769
+type(
+  string
+)
+ident(
+  def line "assembler.ml" 70 1814 1822 "assembler.ml" 71 1893 1922
+)
+"assembler.ml" 70 1814 1826 "assembler.ml" 70 1814 1829
+type(
+  string
+)
+ident(
+  def str "assembler.ml" 71 1893 1904 "assembler.ml" 71 1893 1922
+)
+"assembler.ml" 70 1814 1832 "assembler.ml" 70 1814 1839
+type(
+  string list -> string
+)
+ident(
+  ext_ref List.hd
+)
+"assembler.ml" 70 1814 1841 "assembler.ml" 70 1814 1856
+type(
+  Str.regexp -> string -> string list
+)
+ident(
+  ext_ref Str.split_delim
+)
+"assembler.ml" 70 1814 1858 "assembler.ml" 70 1814 1868
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"assembler.ml" 70 1814 1869 "assembler.ml" 70 1814 1885
+type(
+  string
+)
+"assembler.ml" 70 1814 1857 "assembler.ml" 70 1814 1886
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"assembler.ml" 70 1814 1887 "assembler.ml" 70 1814 1891
+type(
+  string
+)
+ident(
+  int_ref line "assembler.ml" 68 1739 1765 "assembler.ml" 68 1739 1769
+)
+"assembler.ml" 70 1814 1840 "assembler.ml" 70 1814 1892
+call(
+  stack
+)
+type(
+  string list
+)
+"assembler.ml" 70 1814 1832 "assembler.ml" 70 1814 1892
+call(
+  stack
+)
+type(
+  string
+)
+"assembler.ml" 71 1893 1905 "assembler.ml" 71 1893 1908
+type(
+  string
+)
+ident(
+  int_ref str "assembler.ml" 70 1814 1826 "assembler.ml" 70 1814 1829
+)
+"assembler.ml" 71 1893 1911 "assembler.ml" 71 1893 1921
+type(
+  'a
+)
+ident(
+  int_ref lineNumber "assembler.ml" 68 1739 1754 "assembler.ml" 68 1739 1764
+)
+"assembler.ml" 71 1893 1904 "assembler.ml" 71 1893 1922
+type(
+  string * 'a
+)
+"assembler.ml" 70 1814 1822 "assembler.ml" 71 1893 1922
+type(
+  string * 'a
+)
+"assembler.ml" 74 1936 1940 "assembler.ml" 74 1936 1949
+type(
+  (int -> string -> string * int) -> string list -> (string * int) list
+)
+ident(
+  ext_ref List.mapi
+)
+"assembler.ml" 74 1936 1950 "assembler.ml" 74 1936 1956
+type(
+  int -> string -> string * int
+)
+ident(
+  int_ref helper "assembler.ml" 68 1739 1747 "assembler.ml" 68 1739 1753
+)
+"assembler.ml" 74 1936 1957 "assembler.ml" 74 1936 1966
+type(
+  string list
+)
+ident(
+  int_ref instructs "assembler.ml" 66 1711 1725 "assembler.ml" 66 1711 1734
+)
+"assembler.ml" 74 1936 1940 "assembler.ml" 74 1936 1966
+call(
+  tail
+)
+type(
+  (string * int) list
+)
+"assembler.ml" 68 1739 1743 "assembler.ml" 74 1936 1966
+type(
+  (string * int) list
+)
+"assembler.ml" 82 2143 2147 "assembler.ml" 82 2143 2152
+type(
+  'a -> string list -> int option list
+)
+ident(
+  def toInt "assembler.ml" 116 3131 3131 "assembler.ml" 1 0 -1
+)
+"assembler.ml" 82 2143 2153 "assembler.ml" 82 2143 2163
+type(
+  'a
+)
+ident(
+  def lineNumber "assembler.ml" 82 2143 2164 "assembler.ml" 102 2724 2767
+)
+"assembler.ml" 82 2143 2164 "assembler.ml" 82 2143 2175
+type(
+  string list
+)
+ident(
+  def instruction "assembler.ml" 89 2404 2408 "assembler.ml" 102 2724 2767
+)
+"assembler.ml" 89 2404 2412 "assembler.ml" 89 2404 2418
+type(
+  int -> string -> int option
+)
+ident(
+  def helper "assembler.ml" 102 2724 2728 "assembler.ml" 102 2724 2767
+)
+"assembler.ml" 89 2404 2419 "assembler.ml" 89 2404 2426
+type(
+  int
+)
+ident(
+  def elemNum "assembler.ml" 89 2404 2427 "assembler.ml" 99 2690 2709
+)
+"assembler.ml" 89 2404 2427 "assembler.ml" 89 2404 2431
+type(
+  string
+)
+ident(
+  def elem "assembler.ml" 90 2434 2442 "assembler.ml" 99 2690 2709
+)
+"assembler.ml" 90 2434 2448 "assembler.ml" 90 2434 2455
+type(
+  int
+)
+ident(
+  int_ref elemNum "assembler.ml" 89 2404 2419 "assembler.ml" 89 2404 2426
+)
+"assembler.ml" 91 2462 2472 "assembler.ml" 91 2462 2473
+type(
+  int
+)
+"assembler.ml" 91 2462 2477 "assembler.ml" 91 2462 2481
+type(
+  int option
+)
+"assembler.ml" 93 2505 2515 "assembler.ml" 93 2505 2516
+type(
+  int
+)
+"assembler.ml" 93 2505 2525 "assembler.ml" 93 2505 2541
+type(
+  string -> int
+)
+ident(
+  int_ref determineOppcode "assembler.ml" 26 698 702 "assembler.ml" 26 698 718
+)
+"assembler.ml" 93 2505 2542 "assembler.ml" 93 2505 2546
+type(
+  string
+)
+ident(
+  int_ref elem "assembler.ml" 89 2404 2427 "assembler.ml" 89 2404 2431
+)
+"assembler.ml" 93 2505 2524 "assembler.ml" 93 2505 2547
+call(
+  stack
+)
+type(
+  int
+)
+"assembler.ml" 93 2505 2520 "assembler.ml" 93 2505 2547
+type(
+  int option
+)
+"assembler.ml" 96 2622 2632 "assembler.ml" 96 2622 2633
+type(
+  int
+)
+"assembler.ml" 97 2635 2645 "assembler.ml" 97 2635 2646
+type(
+  int
+)
+"assembler.ml" 96 2622 2632 "assembler.ml" 97 2635 2646
+type(
+  int
+)
+"assembler.ml" 98 2648 2658 "assembler.ml" 98 2648 2659
+type(
+  int
+)
+"assembler.ml" 96 2622 2632 "assembler.ml" 98 2648 2659
+type(
+  int
+)
+"assembler.ml" 98 2648 2669 "assembler.ml" 98 2648 2682
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"assembler.ml" 98 2648 2683 "assembler.ml" 98 2648 2687
+type(
+  string
+)
+ident(
+  int_ref elem "assembler.ml" 89 2404 2427 "assembler.ml" 89 2404 2431
+)
+"assembler.ml" 98 2648 2667 "assembler.ml" 98 2648 2688
+type(
+  int
+)
+"assembler.ml" 98 2648 2663 "assembler.ml" 98 2648 2688
+type(
+  int option
+)
+"assembler.ml" 99 2690 2700 "assembler.ml" 99 2690 2701
+type(
+  int
+)
+"assembler.ml" 99 2690 2705 "assembler.ml" 99 2690 2709
+type(
+  int option
+)
+"assembler.ml" 90 2434 2442 "assembler.ml" 99 2690 2709
+type(
+  int option
+)
+"assembler.ml" 102 2724 2728 "assembler.ml" 102 2724 2736
+type(
+  int option list -> int option list
+)
+ident(
+  ext_ref List.rev
+)
+"assembler.ml" 102 2724 2738 "assembler.ml" 102 2724 2747
+type(
+  (int -> string -> int option) -> string list -> int option list
+)
+ident(
+  ext_ref List.mapi
+)
+"assembler.ml" 102 2724 2748 "assembler.ml" 102 2724 2754
+type(
+  int -> string -> int option
+)
+ident(
+  int_ref helper "assembler.ml" 89 2404 2412 "assembler.ml" 89 2404 2418
+)
+"assembler.ml" 102 2724 2755 "assembler.ml" 102 2724 2766
+type(
+  string list
+)
+ident(
+  int_ref instruction "assembler.ml" 82 2143 2164 "assembler.ml" 82 2143 2175
+)
+"assembler.ml" 102 2724 2737 "assembler.ml" 102 2724 2767
+call(
+  stack
+)
+type(
+  int option list
+)
+"assembler.ml" 102 2724 2728 "assembler.ml" 102 2724 2767
+call(
+  tail
+)
+type(
+  int option list
+)
+"assembler.ml" 89 2404 2408 "assembler.ml" 102 2724 2767
+type(
+  int option list
+)
+"assembler.ml" 116 3131 3135 "assembler.ml" 116 3131 3142
+type(
+  int option list -> int
+)
+ident(
+  def packInt "assembler.ml" 147 3967 3967 "assembler.ml" 1 0 -1
+)
+"assembler.ml" 116 3131 3143 "assembler.ml" 116 3131 3151
+type(
+  int option list
+)
+ident(
+  def instruct "assembler.ml" 118 3155 3159 "assembler.ml" 139 3923 3939
+)
+"assembler.ml" 118 3155 3163 "assembler.ml" 118 3155 3178
+type(
+  int option list
+)
+ident(
+  def instructIntOpts "assembler.ml" 119 3227 3231 "assembler.ml" 139 3923 3939
+)
+"assembler.ml" 118 3155 3181 "assembler.ml" 118 3155 3192
+type(
+  (int option -> bool) -> int option list -> int option list
+)
+ident(
+  ext_ref List.filter
+)
+"assembler.ml" 118 3155 3198 "assembler.ml" 118 3155 3199
+type(
+  int option
+)
+ident(
+  def x "assembler.ml" 118 3155 3203 "assembler.ml" 118 3155 3212
+)
+"assembler.ml" 118 3155 3203 "assembler.ml" 118 3155 3204
+type(
+  int option
+)
+ident(
+  int_ref x "assembler.ml" 118 3155 3198 "assembler.ml" 118 3155 3199
+)
+"assembler.ml" 118 3155 3205 "assembler.ml" 118 3155 3207
+type(
+  int option -> int option -> bool
+)
+ident(
+  ext_ref Pervasives.( != )
+)
+"assembler.ml" 118 3155 3208 "assembler.ml" 118 3155 3212
+type(
+  int option
+)
+"assembler.ml" 118 3155 3203 "assembler.ml" 118 3155 3212
+type(
+  bool
+)
+"assembler.ml" 118 3155 3193 "assembler.ml" 118 3155 3213
+type(
+  int option -> bool
+)
+"assembler.ml" 118 3155 3214 "assembler.ml" 118 3155 3222
+type(
+  int option list
+)
+ident(
+  int_ref instruct "assembler.ml" 116 3131 3143 "assembler.ml" 116 3131 3151
+)
+"assembler.ml" 118 3155 3181 "assembler.ml" 118 3155 3222
+call(
+  stack
+)
+type(
+  int option list
+)
+"assembler.ml" 119 3227 3235 "assembler.ml" 119 3227 3247
+type(
+  int list
+)
+ident(
+  def instructInts "assembler.ml" 125 3422 3426 "assembler.ml" 139 3923 3939
+)
+"assembler.ml" 119 3227 3250 "assembler.ml" 119 3227 3262
+type(
+  (int option -> int) -> int option list -> int list
+)
+ident(
+  ext_ref List.rev_map
+)
+"assembler.ml" 119 3227 3268 "assembler.ml" 119 3227 3269
+type(
+  int option
+)
+ident(
+  def x "assembler.ml" 120 3274 3282 "assembler.ml" 122 3368 3389
+)
+"assembler.ml" 120 3274 3288 "assembler.ml" 120 3274 3289
+type(
+  int option
+)
+ident(
+  int_ref x "assembler.ml" 119 3227 3268 "assembler.ml" 119 3227 3269
+)
+"assembler.ml" 121 3296 3306 "assembler.ml" 121 3296 3310
+type(
+  int option
+)
+"assembler.ml" 121 3296 3314 "assembler.ml" 121 3296 3322
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"assembler.ml" 121 3296 3323 "assembler.ml" 121 3296 3366
+type(
+  string
+)
+"assembler.ml" 121 3296 3314 "assembler.ml" 121 3296 3366
+call(
+  tail
+)
+type(
+  int
+)
+"assembler.ml" 122 3368 3383 "assembler.ml" 122 3368 3384
+type(
+  int
+)
+ident(
+  def y "assembler.ml" 122 3368 3388 "assembler.ml" 122 3368 3389
+)
+"assembler.ml" 122 3368 3378 "assembler.ml" 122 3368 3384
+type(
+  int option
+)
+"assembler.ml" 122 3368 3388 "assembler.ml" 122 3368 3389
+type(
+  int
+)
+ident(
+  int_ref y "assembler.ml" 122 3368 3383 "assembler.ml" 122 3368 3384
+)
+"assembler.ml" 120 3274 3282 "assembler.ml" 122 3368 3389
+type(
+  int
+)
+"assembler.ml" 119 3227 3263 "assembler.ml" 122 3368 3391
+type(
+  int option -> int
+)
+"assembler.ml" 122 3368 3392 "assembler.ml" 122 3368 3407
+type(
+  int option list
+)
+ident(
+  int_ref instructIntOpts "assembler.ml" 118 3155 3163 "assembler.ml" 118 3155 3178
+)
+"assembler.ml" 119 3227 3250 "assembler.ml" 122 3368 3407
+call(
+  stack
+)
+type(
+  int list
+)
+"assembler.ml" 125 3422 3430 "assembler.ml" 125 3422 3436
+type(
+  int ref
+)
+ident(
+  def result "assembler.ml" 126 3452 3456 "assembler.ml" 139 3923 3939
+)
+"assembler.ml" 125 3422 3439 "assembler.ml" 125 3422 3442
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"assembler.ml" 125 3422 3443 "assembler.ml" 125 3422 3446
+type(
+  int
+)
+"assembler.ml" 125 3422 3439 "assembler.ml" 125 3422 3446
+type(
+  int ref
+)
+"assembler.ml" 126 3452 3460 "assembler.ml" 126 3452 3466
+type(
+  int -> int -> unit
+)
+ident(
+  def helper "assembler.ml" 133 3751 3758 "assembler.ml" 139 3923 3939
+)
+"assembler.ml" 126 3452 3467 "assembler.ml" 126 3452 3474
+type(
+  int
+)
+ident(
+  def elemNum "assembler.ml" 126 3452 3475 "assembler.ml" 132 3732 3749
+)
+"assembler.ml" 126 3452 3475 "assembler.ml" 126 3452 3479
+type(
+  int
+)
+ident(
+  def elem "assembler.ml" 127 3484 3492 "assembler.ml" 132 3732 3749
+)
+"assembler.ml" 127 3484 3498 "assembler.ml" 127 3484 3505
+type(
+  int
+)
+ident(
+  int_ref elemNum "assembler.ml" 126 3452 3467 "assembler.ml" 126 3452 3474
+)
+"assembler.ml" 128 3512 3522 "assembler.ml" 128 3512 3523
+type(
+  int
+)
+"assembler.ml" 128 3512 3527 "assembler.ml" 128 3512 3533
+type(
+  int ref
+)
+ident(
+  int_ref result "assembler.ml" 125 3422 3430 "assembler.ml" 125 3422 3436
+)
+"assembler.ml" 128 3512 3534 "assembler.ml" 128 3512 3536
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"assembler.ml" 128 3512 3537 "assembler.ml" 128 3512 3538
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"assembler.ml" 128 3512 3538 "assembler.ml" 128 3512 3544
+type(
+  int ref
+)
+ident(
+  int_ref result "assembler.ml" 125 3422 3430 "assembler.ml" 125 3422 3436
+)
+"assembler.ml" 128 3512 3537 "assembler.ml" 128 3512 3544
+type(
+  int
+)
+"assembler.ml" 128 3512 3545 "assembler.ml" 128 3512 3548
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lor )
+)
+"assembler.ml" 128 3512 3551 "assembler.ml" 128 3512 3555
+type(
+  int
+)
+ident(
+  int_ref elem "assembler.ml" 126 3452 3475 "assembler.ml" 126 3452 3479
+)
+"assembler.ml" 128 3512 3556 "assembler.ml" 128 3512 3559
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsl )
+)
+"assembler.ml" 128 3512 3560 "assembler.ml" 128 3512 3562
+type(
+  int
+)
+"assembler.ml" 128 3512 3549 "assembler.ml" 128 3512 3563
+type(
+  int
+)
+"assembler.ml" 128 3512 3537 "assembler.ml" 128 3512 3563
+type(
+  int
+)
+"assembler.ml" 128 3512 3527 "assembler.ml" 128 3512 3564
+type(
+  unit
+)
+"assembler.ml" 129 3565 3575 "assembler.ml" 129 3565 3576
+type(
+  int
+)
+"assembler.ml" 129 3565 3580 "assembler.ml" 129 3565 3586
+type(
+  int ref
+)
+ident(
+  int_ref result "assembler.ml" 125 3422 3430 "assembler.ml" 125 3422 3436
+)
+"assembler.ml" 129 3565 3587 "assembler.ml" 129 3565 3589
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"assembler.ml" 129 3565 3590 "assembler.ml" 129 3565 3591
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"assembler.ml" 129 3565 3591 "assembler.ml" 129 3565 3597
+type(
+  int ref
+)
+ident(
+  int_ref result "assembler.ml" 125 3422 3430 "assembler.ml" 125 3422 3436
+)
+"assembler.ml" 129 3565 3590 "assembler.ml" 129 3565 3597
+type(
+  int
+)
+"assembler.ml" 129 3565 3598 "assembler.ml" 129 3565 3601
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lor )
+)
+"assembler.ml" 129 3565 3604 "assembler.ml" 129 3565 3608
+type(
+  int
+)
+ident(
+  int_ref elem "assembler.ml" 126 3452 3475 "assembler.ml" 126 3452 3479
+)
+"assembler.ml" 129 3565 3609 "assembler.ml" 129 3565 3612
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsl )
+)
+"assembler.ml" 129 3565 3613 "assembler.ml" 129 3565 3615
+type(
+  int
+)
+"assembler.ml" 129 3565 3602 "assembler.ml" 129 3565 3616
+type(
+  int
+)
+"assembler.ml" 129 3565 3590 "assembler.ml" 129 3565 3616
+type(
+  int
+)
+"assembler.ml" 129 3565 3580 "assembler.ml" 129 3565 3616
+type(
+  unit
+)
+"assembler.ml" 130 3618 3628 "assembler.ml" 130 3618 3629
+type(
+  int
+)
+"assembler.ml" 130 3618 3633 "assembler.ml" 130 3618 3639
+type(
+  int ref
+)
+ident(
+  int_ref result "assembler.ml" 125 3422 3430 "assembler.ml" 125 3422 3436
+)
+"assembler.ml" 130 3618 3640 "assembler.ml" 130 3618 3642
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"assembler.ml" 130 3618 3643 "assembler.ml" 130 3618 3644
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"assembler.ml" 130 3618 3644 "assembler.ml" 130 3618 3650
+type(
+  int ref
+)
+ident(
+  int_ref result "assembler.ml" 125 3422 3430 "assembler.ml" 125 3422 3436
+)
+"assembler.ml" 130 3618 3643 "assembler.ml" 130 3618 3650
+type(
+  int
+)
+"assembler.ml" 130 3618 3651 "assembler.ml" 130 3618 3654
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lor )
+)
+"assembler.ml" 130 3618 3657 "assembler.ml" 130 3618 3661
+type(
+  int
+)
+ident(
+  int_ref elem "assembler.ml" 126 3452 3475 "assembler.ml" 126 3452 3479
+)
+"assembler.ml" 130 3618 3662 "assembler.ml" 130 3618 3665
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsl )
+)
+"assembler.ml" 130 3618 3666 "assembler.ml" 130 3618 3668
+type(
+  int
+)
+"assembler.ml" 130 3618 3655 "assembler.ml" 130 3618 3669
+type(
+  int
+)
+"assembler.ml" 130 3618 3643 "assembler.ml" 130 3618 3669
+type(
+  int
+)
+"assembler.ml" 130 3618 3633 "assembler.ml" 130 3618 3669
+type(
+  unit
+)
+"assembler.ml" 131 3670 3680 "assembler.ml" 131 3670 3681
+type(
+  int
+)
+"assembler.ml" 131 3670 3685 "assembler.ml" 131 3670 3691
+type(
+  int ref
+)
+ident(
+  int_ref result "assembler.ml" 125 3422 3430 "assembler.ml" 125 3422 3436
+)
+"assembler.ml" 131 3670 3692 "assembler.ml" 131 3670 3694
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"assembler.ml" 131 3670 3695 "assembler.ml" 131 3670 3696
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"assembler.ml" 131 3670 3696 "assembler.ml" 131 3670 3702
+type(
+  int ref
+)
+ident(
+  int_ref result "assembler.ml" 125 3422 3430 "assembler.ml" 125 3422 3436
+)
+"assembler.ml" 131 3670 3695 "assembler.ml" 131 3670 3702
+type(
+  int
+)
+"assembler.ml" 131 3670 3703 "assembler.ml" 131 3670 3706
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lor )
+)
+"assembler.ml" 131 3670 3709 "assembler.ml" 131 3670 3713
+type(
+  int
+)
+ident(
+  int_ref elem "assembler.ml" 126 3452 3475 "assembler.ml" 126 3452 3479
+)
+"assembler.ml" 131 3670 3714 "assembler.ml" 131 3670 3718
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( land )
+)
+"assembler.ml" 131 3670 3719 "assembler.ml" 131 3670 3729
+type(
+  int
+)
+"assembler.ml" 131 3670 3707 "assembler.ml" 131 3670 3730
+type(
+  int
+)
+"assembler.ml" 131 3670 3695 "assembler.ml" 131 3670 3730
+type(
+  int
+)
+"assembler.ml" 131 3670 3685 "assembler.ml" 131 3670 3730
+type(
+  unit
+)
+"assembler.ml" 132 3732 3742 "assembler.ml" 132 3732 3743
+type(
+  int
+)
+"assembler.ml" 132 3732 3747 "assembler.ml" 132 3732 3749
+type(
+  unit
+)
+"assembler.ml" 127 3484 3492 "assembler.ml" 132 3732 3749
+type(
+  unit
+)
+"assembler.ml" 133 3751 3758 "assembler.ml" 133 3751 3768
+type(
+  (int -> int -> unit) -> int list -> unit
+)
+ident(
+  ext_ref List.iteri
+)
+"assembler.ml" 133 3751 3769 "assembler.ml" 133 3751 3775
+type(
+  int -> int -> unit
+)
+ident(
+  int_ref helper "assembler.ml" 126 3452 3460 "assembler.ml" 126 3452 3466
+)
+"assembler.ml" 133 3751 3776 "assembler.ml" 133 3751 3788
+type(
+  int list
+)
+ident(
+  int_ref instructInts "assembler.ml" 119 3227 3235 "assembler.ml" 119 3227 3247
+)
+"assembler.ml" 133 3751 3758 "assembler.ml" 133 3751 3788
+call(
+  stack
+)
+type(
+  unit
+)
+"assembler.ml" 136 3844 3851 "assembler.ml" 136 3844 3858
+type(
+  int list -> int
+)
+ident(
+  ext_ref List.hd
+)
+"assembler.ml" 136 3844 3859 "assembler.ml" 136 3844 3871
+type(
+  int list
+)
+ident(
+  int_ref instructInts "assembler.ml" 119 3227 3235 "assembler.ml" 119 3227 3247
+)
+"assembler.ml" 136 3844 3851 "assembler.ml" 136 3844 3871
+call(
+  stack
+)
+type(
+  int
+)
+"assembler.ml" 136 3844 3872 "assembler.ml" 136 3844 3873
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"assembler.ml" 136 3844 3874 "assembler.ml" 136 3844 3875
+type(
+  int
+)
+"assembler.ml" 136 3844 3851 "assembler.ml" 136 3844 3875
+type(
+  bool
+)
+"assembler.ml" 137 3876 3889 "assembler.ml" 137 3876 3897
+type(
+  int list -> int -> int
+)
+ident(
+  ext_ref List.nth
+)
+"assembler.ml" 137 3876 3898 "assembler.ml" 137 3876 3910
+type(
+  int list
+)
+ident(
+  int_ref instructInts "assembler.ml" 119 3227 3235 "assembler.ml" 119 3227 3247
+)
+"assembler.ml" 137 3876 3911 "assembler.ml" 137 3876 3912
+type(
+  int
+)
+"assembler.ml" 137 3876 3889 "assembler.ml" 137 3876 3912
+call(
+  tail
+)
+type(
+  int
+)
+"assembler.ml" 139 3923 3931 "assembler.ml" 139 3923 3932
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"assembler.ml" 139 3923 3932 "assembler.ml" 139 3923 3938
+type(
+  int ref
+)
+ident(
+  int_ref result "assembler.ml" 125 3422 3430 "assembler.ml" 125 3422 3436
+)
+"assembler.ml" 139 3923 3931 "assembler.ml" 139 3923 3938
+type(
+  int
+)
+"assembler.ml" 136 3844 3848 "assembler.ml" 139 3923 3939
+type(
+  int
+)
+"assembler.ml" 133 3751 3758 "assembler.ml" 139 3923 3939
+type(
+  int
+)
+"assembler.ml" 126 3452 3456 "assembler.ml" 139 3923 3939
+type(
+  int
+)
+"assembler.ml" 125 3422 3426 "assembler.ml" 139 3923 3939
+type(
+  int
+)
+"assembler.ml" 119 3227 3231 "assembler.ml" 139 3923 3939
+type(
+  int
+)
+"assembler.ml" 118 3155 3159 "assembler.ml" 139 3923 3939
+type(
+  int
+)
+"assembler.ml" 147 3967 3971 "assembler.ml" 147 3967 3976
+type(
+  string ref
+)
+ident(
+  def input "assembler.ml" 148 3989 3989 "assembler.ml" 1 0 -1
+)
+"assembler.ml" 147 3967 3980 "assembler.ml" 147 3967 3983
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"assembler.ml" 147 3967 3984 "assembler.ml" 147 3967 3986
+type(
+  string
+)
+"assembler.ml" 147 3967 3980 "assembler.ml" 147 3967 3986
+type(
+  string ref
+)
+"assembler.ml" 148 3989 3993 "assembler.ml" 148 3989 3999
+type(
+  string ref
+)
+ident(
+  def output "assembler.ml" 153 4146 4146 "assembler.ml" 1 0 -1
+)
+"assembler.ml" 148 3989 4002 "assembler.ml" 148 3989 4005
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"assembler.ml" 148 3989 4006 "assembler.ml" 148 3989 4008
+type(
+  string
+)
+"assembler.ml" 148 3989 4002 "assembler.ml" 148 3989 4008
+type(
+  string ref
+)
+"assembler.ml" 153 4146 4150 "assembler.ml" 153 4146 4155
+type(
+  (char * string * 'a option * (string -> unit) option) list
+)
+ident(
+  def specs "assembler.ml" 163 4387 4387 "assembler.ml" 1 0 -1
+)
+"assembler.ml" 155 4162 4167 "assembler.ml" 155 4162 4170
+type(
+  char
+)
+"assembler.ml" 155 4162 4172 "assembler.ml" 155 4162 4179
+type(
+  string
+)
+"assembler.ml" 155 4162 4182 "assembler.ml" 155 4162 4186
+type(
+  'a option
+)
+"assembler.ml" 155 4162 4190 "assembler.ml" 155 4162 4208
+type(
+  string ref -> exn -> (string -> unit) option
+)
+ident(
+  ext_ref Getopt.atmost_once
+)
+"assembler.ml" 155 4162 4209 "assembler.ml" 155 4162 4214
+type(
+  string ref
+)
+ident(
+  int_ref input "assembler.ml" 147 3967 3971 "assembler.ml" 147 3967 3976
+)
+"assembler.ml" 155 4162 4230 "assembler.ml" 155 4162 4254
+type(
+  string
+)
+"assembler.ml" 155 4162 4216 "assembler.ml" 155 4162 4255
+type(
+  exn
+)
+"assembler.ml" 155 4162 4189 "assembler.ml" 155 4162 4258
+call(
+  stack
+)
+type(
+  (string -> unit) option
+)
+"assembler.ml" 155 4162 4166 "assembler.ml" 155 4162 4259
+type(
+  char * string * 'a option * (string -> unit) option
+)
+"assembler.ml" 156 4261 4266 "assembler.ml" 156 4261 4269
+type(
+  char
+)
+"assembler.ml" 156 4261 4271 "assembler.ml" 156 4261 4279
+type(
+  string
+)
+"assembler.ml" 156 4261 4281 "assembler.ml" 156 4261 4285
+type(
+  'a option
+)
+"assembler.ml" 156 4261 4289 "assembler.ml" 156 4261 4307
+type(
+  string ref -> exn -> (string -> unit) option
+)
+ident(
+  ext_ref Getopt.atmost_once
+)
+"assembler.ml" 156 4261 4308 "assembler.ml" 156 4261 4314
+type(
+  string ref
+)
+ident(
+  int_ref output "assembler.ml" 148 3989 3993 "assembler.ml" 148 3989 3999
+)
+"assembler.ml" 156 4261 4329 "assembler.ml" 156 4261 4354
+type(
+  string
+)
+"assembler.ml" 156 4261 4315 "assembler.ml" 156 4261 4355
+type(
+  exn
+)
+"assembler.ml" 156 4261 4288 "assembler.ml" 156 4261 4357
+call(
+  stack
+)
+type(
+  (string -> unit) option
+)
+"assembler.ml" 156 4261 4265 "assembler.ml" 156 4261 4358
+type(
+  char * string * 'a option * (string -> unit) option
+)
+"assembler.ml" 154 4160 4160 "assembler.ml" 157 4361 4362
+type(
+  (char * string * 'a option * (string -> unit) option) list
+)
+"assembler.ml" 163 4387 4391 "assembler.ml" 163 4387 4392
+type(
+  unit
+)
+"assembler.ml" 164 4396 4399 "assembler.ml" 164 4396 4419
+type(
+  Getopt.opt list -> (string -> unit) -> unit
+)
+ident(
+  ext_ref Getopt.parse_cmdline
+)
+"assembler.ml" 164 4396 4420 "assembler.ml" 164 4396 4425
+type(
+  Getopt.opt list
+)
+ident(
+  int_ref specs "assembler.ml" 153 4146 4150 "assembler.ml" 153 4146 4155
+)
+"assembler.ml" 164 4396 4426 "assembler.ml" 164 4396 4439
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_endline
+)
+"assembler.ml" 164 4396 4399 "assembler.ml" 164 4396 4439
+call(
+  stack
+)
+type(
+  unit
+)
+"assembler.ml" 165 4442 4445 "assembler.ml" 165 4442 4458
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"assembler.ml" 165 4442 4459 "assembler.ml" 165 4442 4473
+type(
+  (string -> unit, out_channel, unit) format
+)
+"assembler.ml" 165 4442 4474 "assembler.ml" 165 4442 4475
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"assembler.ml" 165 4442 4475 "assembler.ml" 165 4442 4480
+type(
+  string ref
+)
+ident(
+  int_ref input "assembler.ml" 147 3967 3971 "assembler.ml" 147 3967 3976
+)
+"assembler.ml" 165 4442 4474 "assembler.ml" 165 4442 4480
+type(
+  string
+)
+"assembler.ml" 165 4442 4445 "assembler.ml" 165 4442 4480
+call(
+  stack
+)
+type(
+  unit
+)
+"assembler.ml" 166 4482 4485 "assembler.ml" 166 4482 4498
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"assembler.ml" 166 4482 4499 "assembler.ml" 166 4482 4514
+type(
+  (string -> unit, out_channel, unit) format
+)
+"assembler.ml" 166 4482 4515 "assembler.ml" 166 4482 4516
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"assembler.ml" 166 4482 4516 "assembler.ml" 166 4482 4522
+type(
+  string ref
+)
+ident(
+  int_ref output "assembler.ml" 148 3989 3993 "assembler.ml" 148 3989 3999
+)
+"assembler.ml" 166 4482 4515 "assembler.ml" 166 4482 4522
+type(
+  string
+)
+"assembler.ml" 166 4482 4485 "assembler.ml" 166 4482 4522
+call(
+  stack
+)
+type(
+  unit
+)
+"assembler.ml" 169 4530 4537 "assembler.ml" 169 4530 4546
+type(
+  string list
+)
+ident(
+  def inputList "assembler.ml" 170 4583 4586 "assembler.ml" 183 5093 5144
+)
+"assembler.ml" 169 4530 4549 "assembler.ml" 169 4530 4571
+type(
+  string -> string list
+)
+ident(
+  ext_ref Util.strlist_from_file
+)
+"assembler.ml" 169 4530 4572 "assembler.ml" 169 4530 4573
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"assembler.ml" 169 4530 4573 "assembler.ml" 169 4530 4578
+type(
+  string ref
+)
+ident(
+  int_ref input "assembler.ml" 147 3967 3971 "assembler.ml" 147 3967 3976
+)
+"assembler.ml" 169 4530 4572 "assembler.ml" 169 4530 4578
+type(
+  string
+)
+"assembler.ml" 169 4530 4549 "assembler.ml" 169 4530 4578
+call(
+  stack
+)
+type(
+  string list
+)
+"assembler.ml" 170 4583 4590 "assembler.ml" 170 4583 4607
+type(
+  string list list
+)
+ident(
+  def instruct_elements "assembler.ml" 171 4639 4642 "assembler.ml" 183 5093 5144
+)
+"assembler.ml" 170 4583 4610 "assembler.ml" 170 4583 4624
+type(
+  string list -> string list list
+)
+ident(
+  int_ref instructParser "assembler.ml" 50 1258 1262 "assembler.ml" 50 1258 1276
+)
+"assembler.ml" 170 4583 4625 "assembler.ml" 170 4583 4634
+type(
+  string list
+)
+ident(
+  int_ref inputList "assembler.ml" 169 4530 4537 "assembler.ml" 169 4530 4546
+)
+"assembler.ml" 170 4583 4610 "assembler.ml" 170 4583 4634
+call(
+  stack
+)
+type(
+  string list list
+)
+"assembler.ml" 171 4639 4642 "assembler.ml" 171 4639 4651
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"assembler.ml" 171 4639 4657 "assembler.ml" 171 4639 4658
+type(
+  string
+)
+ident(
+  def x "assembler.ml" 171 4639 4662 "assembler.ml" 171 4639 4685
+)
+"assembler.ml" 171 4639 4662 "assembler.ml" 171 4639 4675
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"assembler.ml" 171 4639 4676 "assembler.ml" 171 4639 4683
+type(
+  (string -> unit, out_channel, unit) format
+)
+"assembler.ml" 171 4639 4684 "assembler.ml" 171 4639 4685
+type(
+  string
+)
+ident(
+  int_ref x "assembler.ml" 171 4639 4657 "assembler.ml" 171 4639 4658
+)
+"assembler.ml" 171 4639 4662 "assembler.ml" 171 4639 4685
+call(
+  tail
+)
+type(
+  unit
+)
+"assembler.ml" 171 4639 4651 "assembler.ml" 171 4639 4687
+type(
+  string -> unit
+)
+"assembler.ml" 171 4639 4688 "assembler.ml" 171 4639 4697
+type(
+  string list
+)
+ident(
+  int_ref inputList "assembler.ml" 169 4530 4537 "assembler.ml" 169 4530 4546
+)
+"assembler.ml" 171 4639 4642 "assembler.ml" 171 4639 4697
+call(
+  stack
+)
+type(
+  unit
+)
+"assembler.ml" 173 4700 4707 "assembler.ml" 173 4700 4714
+type(
+  (string * int) list
+)
+ident(
+  def tagList "assembler.ml" 174 4741 4744 "assembler.ml" 183 5093 5144
+)
+"assembler.ml" 173 4700 4717 "assembler.ml" 173 4700 4726
+type(
+  string list -> (string * int) list
+)
+ident(
+  int_ref tagParser "assembler.ml" 66 1711 1715 "assembler.ml" 66 1711 1724
+)
+"assembler.ml" 173 4700 4727 "assembler.ml" 173 4700 4736
+type(
+  string list
+)
+ident(
+  int_ref inputList "assembler.ml" 169 4530 4537 "assembler.ml" 169 4530 4546
+)
+"assembler.ml" 173 4700 4717 "assembler.ml" 173 4700 4736
+call(
+  stack
+)
+type(
+  (string * int) list
+)
+"assembler.ml" 174 4741 4744 "assembler.ml" 174 4741 4753
+type(
+  (string * int -> unit) -> (string * int) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"assembler.ml" 174 4741 4760 "assembler.ml" 174 4741 4763
+type(
+  string
+)
+ident(
+  def str "assembler.ml" 174 4741 4777 "assembler.ml" 174 4741 4832
+)
+"assembler.ml" 174 4741 4765 "assembler.ml" 174 4741 4772
+type(
+  int
+)
+ident(
+  def lineNum "assembler.ml" 174 4741 4777 "assembler.ml" 174 4741 4832
+)
+"assembler.ml" 174 4741 4759 "assembler.ml" 174 4741 4773
+type(
+  string * int
+)
+"assembler.ml" 174 4741 4777 "assembler.ml" 174 4741 4790
+type(
+  (int -> string -> unit, out_channel, unit) format -> int -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"assembler.ml" 174 4741 4791 "assembler.ml" 174 4741 4820
+type(
+  (int -> string -> unit, out_channel, unit) format
+)
+"assembler.ml" 174 4741 4821 "assembler.ml" 174 4741 4828
+type(
+  int
+)
+ident(
+  int_ref lineNum "assembler.ml" 174 4741 4765 "assembler.ml" 174 4741 4772
+)
+"assembler.ml" 174 4741 4829 "assembler.ml" 174 4741 4832
+type(
+  string
+)
+ident(
+  int_ref str "assembler.ml" 174 4741 4760 "assembler.ml" 174 4741 4763
+)
+"assembler.ml" 174 4741 4777 "assembler.ml" 174 4741 4832
+call(
+  tail
+)
+type(
+  unit
+)
+"assembler.ml" 174 4741 4754 "assembler.ml" 174 4741 4834
+type(
+  string * int -> unit
+)
+"assembler.ml" 174 4741 4835 "assembler.ml" 174 4741 4842
+type(
+  (string * int) list
+)
+ident(
+  int_ref tagList "assembler.ml" 173 4700 4707 "assembler.ml" 173 4700 4714
+)
+"assembler.ml" 174 4741 4744 "assembler.ml" 174 4741 4842
+call(
+  stack
+)
+type(
+  unit
+)
+"assembler.ml" 176 4846 4853 "assembler.ml" 176 4846 4866
+type(
+  int option list list
+)
+ident(
+  def instruct_ints "assembler.ml" 177 4920 4923 "assembler.ml" 183 5093 5144
+)
+"assembler.ml" 176 4846 4869 "assembler.ml" 176 4846 4878
+type(
+  (int -> string list -> int option list) ->
+  string list list -> int option list list
+)
+ident(
+  ext_ref List.mapi
+)
+"assembler.ml" 176 4846 4884 "assembler.ml" 176 4846 4885
+type(
+  int
+)
+ident(
+  def x "assembler.ml" 176 4846 4889 "assembler.ml" 176 4846 4896
+)
+"assembler.ml" 176 4846 4889 "assembler.ml" 176 4846 4894
+type(
+  int -> string list -> int option list
+)
+ident(
+  int_ref toInt "assembler.ml" 82 2143 2147 "assembler.ml" 82 2143 2152
+)
+"assembler.ml" 176 4846 4895 "assembler.ml" 176 4846 4896
+type(
+  int
+)
+ident(
+  int_ref x "assembler.ml" 176 4846 4884 "assembler.ml" 176 4846 4885
+)
+"assembler.ml" 176 4846 4889 "assembler.ml" 176 4846 4896
+call(
+  tail
+)
+type(
+  string list -> int option list
+)
+"assembler.ml" 176 4846 4879 "assembler.ml" 176 4846 4897
+type(
+  int -> string list -> int option list
+)
+"assembler.ml" 176 4846 4898 "assembler.ml" 176 4846 4915
+type(
+  string list list
+)
+ident(
+  int_ref instruct_elements "assembler.ml" 170 4583 4590 "assembler.ml" 170 4583 4607
+)
+"assembler.ml" 176 4846 4869 "assembler.ml" 176 4846 4915
+call(
+  stack
+)
+type(
+  int option list list
+)
+"assembler.ml" 177 4920 4923 "assembler.ml" 177 4920 4932
+type(
+  (int option list -> unit) -> int option list list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"assembler.ml" 177 4920 4938 "assembler.ml" 177 4920 4939
+type(
+  int option list
+)
+ident(
+  def x "assembler.ml" 178 4944 4951 "assembler.ml" 179 4986 5017
+)
+"assembler.ml" 178 4944 4955 "assembler.ml" 178 4944 4958
+type(
+  string
+)
+ident(
+  def str "assembler.ml" 179 4986 4993 "assembler.ml" 179 4986 5017
+)
+"assembler.ml" 178 4944 4962 "assembler.ml" 178 4944 4978
+type(
+  int option list -> string
+)
+ident(
+  int_ref printIntElements "assembler.ml" 11 340 344 "assembler.ml" 11 340 360
+)
+"assembler.ml" 178 4944 4980 "assembler.ml" 178 4944 4981
+type(
+  int option list
+)
+ident(
+  int_ref x "assembler.ml" 177 4920 4938 "assembler.ml" 177 4920 4939
+)
+"assembler.ml" 178 4944 4962 "assembler.ml" 178 4944 4981
+call(
+  stack
+)
+type(
+  string
+)
+"assembler.ml" 179 4986 4993 "assembler.ml" 179 4986 5006
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"assembler.ml" 179 4986 5007 "assembler.ml" 179 4986 5013
+type(
+  (string -> unit, out_channel, unit) format
+)
+"assembler.ml" 179 4986 5014 "assembler.ml" 179 4986 5017
+type(
+  string
+)
+ident(
+  int_ref str "assembler.ml" 178 4944 4955 "assembler.ml" 178 4944 4958
+)
+"assembler.ml" 179 4986 4993 "assembler.ml" 179 4986 5017
+call(
+  tail
+)
+type(
+  unit
+)
+"assembler.ml" 178 4944 4951 "assembler.ml" 179 4986 5017
+type(
+  unit
+)
+"assembler.ml" 177 4920 4932 "assembler.ml" 179 4986 5019
+type(
+  int option list -> unit
+)
+"assembler.ml" 179 4986 5020 "assembler.ml" 179 4986 5033
+type(
+  int option list list
+)
+ident(
+  int_ref instruct_ints "assembler.ml" 176 4846 4853 "assembler.ml" 176 4846 4866
+)
+"assembler.ml" 177 4920 4923 "assembler.ml" 179 4986 5033
+call(
+  stack
+)
+type(
+  unit
+)
+"assembler.ml" 181 5036 5039 "assembler.ml" 181 5036 5048
+type(
+  (int option list -> unit) -> int option list list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"assembler.ml" 181 5036 5054 "assembler.ml" 181 5036 5055
+type(
+  int option list
+)
+ident(
+  def x "assembler.ml" 182 5059 5066 "assembler.ml" 183 5093 5127
+)
+"assembler.ml" 182 5059 5070 "assembler.ml" 182 5059 5076
+type(
+  int
+)
+ident(
+  def packed "assembler.ml" 183 5093 5100 "assembler.ml" 183 5093 5127
+)
+"assembler.ml" 182 5059 5079 "assembler.ml" 182 5059 5086
+type(
+  int option list -> int
+)
+ident(
+  int_ref packInt "assembler.ml" 116 3131 3135 "assembler.ml" 116 3131 3142
+)
+"assembler.ml" 182 5059 5087 "assembler.ml" 182 5059 5088
+type(
+  int option list
+)
+ident(
+  int_ref x "assembler.ml" 181 5036 5054 "assembler.ml" 181 5036 5055
+)
+"assembler.ml" 182 5059 5079 "assembler.ml" 182 5059 5088
+call(
+  stack
+)
+type(
+  int
+)
+"assembler.ml" 183 5093 5100 "assembler.ml" 183 5093 5113
+type(
+  (int -> unit, out_channel, unit) format -> int -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"assembler.ml" 183 5093 5114 "assembler.ml" 183 5093 5120
+type(
+  (int -> unit, out_channel, unit) format
+)
+"assembler.ml" 183 5093 5121 "assembler.ml" 183 5093 5127
+type(
+  int
+)
+ident(
+  int_ref packed "assembler.ml" 182 5059 5070 "assembler.ml" 182 5059 5076
+)
+"assembler.ml" 183 5093 5100 "assembler.ml" 183 5093 5127
+call(
+  tail
+)
+type(
+  unit
+)
+"assembler.ml" 182 5059 5066 "assembler.ml" 183 5093 5127
+type(
+  unit
+)
+"assembler.ml" 181 5036 5049 "assembler.ml" 183 5093 5129
+type(
+  int option list -> unit
+)
+"assembler.ml" 183 5093 5130 "assembler.ml" 183 5093 5143
+type(
+  int option list list
+)
+ident(
+  int_ref instruct_ints "assembler.ml" 176 4846 4853 "assembler.ml" 176 4846 4866
+)
+"assembler.ml" 181 5036 5039 "assembler.ml" 183 5093 5144
+call(
+  stack
+)
+type(
+  unit
+)
+"assembler.ml" 177 4920 4923 "assembler.ml" 183 5093 5144
+type(
+  unit
+)
+"assembler.ml" 176 4846 4849 "assembler.ml" 183 5093 5144
+type(
+  unit
+)
+"assembler.ml" 174 4741 4744 "assembler.ml" 183 5093 5144
+type(
+  unit
+)
+"assembler.ml" 173 4700 4703 "assembler.ml" 183 5093 5144
+type(
+  unit
+)
+"assembler.ml" 171 4639 4642 "assembler.ml" 183 5093 5144
+type(
+  unit
+)
+"assembler.ml" 170 4583 4586 "assembler.ml" 183 5093 5144
+type(
+  unit
+)
+"assembler.ml" 169 4530 4533 "assembler.ml" 183 5093 5144
+type(
+  unit
+)
+"assembler.ml" 166 4482 4485 "assembler.ml" 183 5093 5144
+type(
+  unit
+)
+"assembler.ml" 165 4442 4445 "assembler.ml" 183 5093 5144
+type(
+  unit
+)
+"assembler.ml" 164 4396 4399 "assembler.ml" 183 5093 5144
+type(
+  unit
+)
