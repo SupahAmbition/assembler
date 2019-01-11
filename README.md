@@ -1,10 +1,13 @@
 # ocamlAssembler
 This is a little thing I hacked together over a weekend.
 
+It was very helpful to learn about some of the difference between an imperative language and functional language. I eventually learned some things in my functional language course that made me realize that I could've done some things differently architectural wise, such as introducting variant data types to make operations on the data much easier. I was releying on position of data objects in a list to determine what to do the data. Instead I should of gave the data variant data types, and then determine what operation to do based on that.  
+
 Inspired by a school project, I decided to see if I could implement
 an assembler with a functional langauge, and see how different that
 proramming experiance would be compared to implemening something like
 in a c style imperative language. 
+
 
 
 ## Makfile
