@@ -1,6 +1,0 @@
-    lw   1 0    five   load reg 1 with 5 (symbolicaddress)
-  lw  2 1 3  load 2 with -1 (numericaddress)
-start  add  1 2 1  decremenet reg1
- beq  0  1 2   goto end of program wherere g 1==0
- beq 0   0   start go back to the beginning of the loop
- noop       done   halt end of program five

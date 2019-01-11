@@ -1,6 +1,0 @@
-	lw	3	0	five
-	lw	4	0	four
-	add	3	4	5
-four	.fill	50
-five	.fill	45
-	

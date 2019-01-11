@@ -1,5 +1,0 @@
-	lw	3	0	go	load into reg 3 the value at memory address 3.
-	sw	3	0	5	store the value of reg3 into memory address 4.	
-	noop
-	halt
-go	.fill 17

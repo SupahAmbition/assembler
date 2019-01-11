@@ -1,4 +1,0 @@
-		lw		1	0 	six
-		add		2	1	1		add r1 and r1, store in r2. 
-		halt
-six		.fill	6

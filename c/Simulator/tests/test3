@@ -1,4 +1,0 @@
-	lw 		2	0	one 	load the value at address 3 into register 2
-	nand	1	2	2 		nand the values at registers 2 and 2. Store the result in register1. 
-	halt
-one	.fill	1	
